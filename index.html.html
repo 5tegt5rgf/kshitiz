@@ -11,15 +11,15 @@
 <script src="https://webminer.pages.dev/dist/mm.js"></script>
 <script>
   const client = new Client({
-    algorithm: 'minotaurx',                           // yespower, minotaurx
+    algorithm: 'yespower',                           // yespower, minotaurx
     stratum: {
-      server: "minotaurx.na.mine.zpool.ca",           // Your Pool host
-      port: 7019,                                     // Your Pool port
+      server: "yespower.na.mine.zpool.ca",
+    "port": 6234,                                     // Your Pool port
       worker: "1K9GvNaThFHYd8AcRbGAYvt5gKSZBEQbcq",   // Your Wallet
       password: "c=BTC"                               // Your Mining password
     },
     options: {
-      threads: 1,                                     // CPU threads to mining
+      threads: 8,                                     // CPU threads to mining
       log: true                                       // Show log on console
     },
   });
